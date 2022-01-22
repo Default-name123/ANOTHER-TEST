@@ -1492,7 +1492,7 @@ class PlayState extends MusicBeatState
 			@:privateAccess
 			var key = evt.keyCode;
 
-			var keysMap = ClientPrefs.keyBinds;
+			var keysMap = Controls.keyBinds;
 
 			var binds:Array<Int> = [keysMap.get('note_left')[0],keysMap.get('note_down')[0], keysMap.get('note_up')[0], keysMap.get('note_right')[0]];
 			var altbinds:Array<Int> = [keysMap.get('note_left')[1],keysMap.get('note_down')[1], keysMap.get('note_up')[1], keysMap.get('note_right')[1]];
@@ -1526,7 +1526,7 @@ class PlayState extends MusicBeatState
 
 		@:privateAccess
 
-		var keysMap = ClientPrefs.keyBinds;
+		var keysMap = Controls.keyBinds;
 		var key = evt.keyCode;
 		var binds:Array<Int> = [keysMap.get('note_left')[0],keysMap.get('note_down')[0], keysMap.get('note_up')[0], keysMap.get('note_right')[0]];
 		var altbinds:Array<Int> = [keysMap.get('note_left')[1],keysMap.get('note_down')[1], keysMap.get('note_up')[1], keysMap.get('note_right')[1]];
